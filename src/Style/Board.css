@@ -1,0 +1,73 @@
+.card {
+  width: 210px;
+  height: 274px;
+  margin-left: 25px;
+  background: rgb(38, 38, 38);
+  box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.333);
+  
+}
+.imgstyle{
+height: 100%;
+width: 100%;
+}
+.imge {
+  height: 60px;
+  background-color:#0281ff;
+}
+
+.Description {
+  border-color: #141414;
+  background-color: #414141;
+  transform: translate(5px, 6px);
+  width: 180px;
+  height: 130px;
+  border-radius: 5px;
+}
+/* Board.css */
+
+/* Board.css */
+/* Board.css */
+
+.card {
+  /* Your existing card styles here */
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+/* Pseudo-element for lightning effect */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  opacity: 0;
+  transition: opacity 0.2s;
+  z-index: -1;
+  pointer-events: none; /* Ensure it doesn't interfere with content */
+}
+
+/* Define hover styles for the card and pseudo-element */
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card:hover::before {
+  content: ""; /* Add content to the pseudo-element */
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.3) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 75%, transparent 75%, transparent); /* Lightning gradient effect */
+  animation: lightning 0.3s linear infinite; /* Apply lightning animation */
+  opacity: 1;
+}
+
+@keyframes lightning {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+

@@ -1,0 +1,87 @@
+.gtext{
+    background: linear-gradient(to bottom, #288CEF 30%, #288CEF 10%, #F2F6FA 10%, #FAFAFA 30%, #288CEF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+.img {
+  width: 40%;
+  height: 435px;
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1)); /* Add a subtle box shadow */
+  transition: filter 0.3s ease; /* Add a smooth transition effect */
+
+  /* Add a border effect */
+  border: 3px solid transparent; /* Initially transparent border */
+}
+
+.img:hover {
+  filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.2)); /* Increase box shadow on hover */
+  border: 3px solid #288cef; /* Change border color on hover */
+}
+
+
+.presenters h3 {
+  font-size: 18px; /* Heading font size */
+  margin-bottom: 10px; /* Add some spacing below the heading */
+}
+
+.presenters ul {
+  list-style-type: disc; /* Use bullets as list markers */
+  padding-left: 20px; /* Add left padding to the list */
+}
+
+.presenters li {
+  font-size: 16px; /* List item font size */
+  margin-bottom: 5px; /* Add spacing between list items */
+}
+
+
+
+@media (max-width: 500px) 
+{
+   .main_div
+   {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+   }
+   .img
+   {
+    width:90%;
+   }
+   .info
+   {
+    width: 100%;
+   }
+   .topic
+   {
+    width:100%;
+    padding-left: 10px;
+    font-size: 25px;
+   }
+   .desc
+   {
+     padding-left: 20px;
+     width:100%;
+     font-size: 20px;
+   }
+   .presenters ul {
+  list-style-type: disc; /* Use bullets as list markers */
+  padding-left: 20px; 
+  margin-left: 20px;/* Add left padding to the list */
+}
+.presenters h3 {
+  font-size: 18px; /* Heading font size */
+  margin-bottom: 10px;
+  margin-left: 20px; /* Add some spacing below the heading */
+}
+.winners
+{
+  display: flex;
+  flex-direction: column;
+}
+}

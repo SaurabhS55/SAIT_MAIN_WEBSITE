@@ -1,0 +1,25 @@
+.gtext {
+    background: linear-gradient(to bottom, #288CEF 80%, #288CEF 10%, #F2F6FA 10%, #FAFAFA 30%, #288CEF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+.gradient-text {
+  background-image: linear-gradient(to left,#7CBCFC,#3096FB,#0281ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+@media (max-width: 500px) 
+{
+
+   
+  .mentor{
+    display: flex;
+    flex-direction: column;
+  }
+}
+

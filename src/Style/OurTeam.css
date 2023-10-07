@@ -1,0 +1,29 @@
+.slider {
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide-right {
+  transform: translateX(-100%);
+}
+
+.no-slide {
+  transition: none;
+}
+
+/* Define styles for visible and hidden cards */
+.slider-item {
+  width: 100%;
+  flex-shrink: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.slider-item.visible {
+  opacity: 1;
+}
+
+.slider-item.hidden {
+  display: none;
+}
