@@ -4,14 +4,10 @@ import Artificial from "../Assets/ArtificialIntelligence.jpeg"
 
 
 const clubServices = [
-  
   {
-   
     id:0,
     poster_url:Artificial,
-
     event_name: "Artificial Intelligence",
-
     description:
       "AI Club: Explore, Learn, Innovate. Dive into the world of Artificial Intelligence with our club. Join us for workshops, projects, and discussions on AI technology. Discover the future today!",
     

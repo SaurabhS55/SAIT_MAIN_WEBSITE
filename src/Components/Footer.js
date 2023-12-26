@@ -21,7 +21,7 @@ function Footer({
   };
 
   return (
-    <footer>
+    <footer className="mb-6 rounded-2xl">
       <div className="row primary">
         <div className="column about">
           <h3>SAIT</h3>

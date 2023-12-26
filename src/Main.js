@@ -1,4 +1,4 @@
-import React, { useState, useEffect,useRef } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import Aboutus from "./Components/Aboutus";
 import ContactForm from "./Components/ContactForm";
 import Home from "./Components/Home";
@@ -8,10 +8,12 @@ import MentorPage from "./Components/MentorPage";
 import TeamMobile from "./Components/TeamMobile";
 import Footer from "./Components/Footer";
 import NavBar from "./Components/NavBar";
-import Gallery from "./Components/ResponsiveGallery"
-import ClubServices from "./Components/ClubServices";
+import Gallery from "./Components/ResponsiveGallery";
+import imageContext from "./Contexts/imageContext";
 
-function Main() {
+const Main = () => {
+  const context = useContext(imageContext);
+  const { images, getImages } = context;
   const homeRef = useRef(null);
   const aboutUsRef = useRef(null);
   const galleryRef = useRef(null);
@@ -21,14 +23,16 @@ function Main() {
 
   const scrollToRef = (ref) => {
     if (ref && ref.current) {
-      ref.current.scrollIntoView({ behavior: 'smooth' });
+      ref.current.scrollIntoView({ behavior: "smooth" });
     }
   };
 
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    // Update the screenWidth state when the window is resized
+    getImages();
+    console.log(images);
+
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
     };
@@ -40,7 +44,6 @@ function Main() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
- 
 
   return (
     <div className="overflow-hidden">
@@ -53,22 +56,26 @@ function Main() {
         scrollToMentor={() => scrollToRef(mentorRef)}
       />
       <Home ref={homeRef} />
-      <Aboutus ref={aboutUsRef} />      
+      <Aboutus ref={aboutUsRef} />
       <Event ref={eventRef} />
-      
-      <MentorPage  ref={mentorRef}/>
-      {screenWidth > 500 ? <OurTeam ref={teamRef}/> : <TeamMobile ref={teamRef} />}
-      <Gallery ref={galleryRef}/>
+
+      {/* <MentorPage ref={mentorRef} />
+      {screenWidth > 500 ? (
+        <OurTeam ref={teamRef} />
+      ) : (
+        <TeamMobile ref={teamRef} />
+      )} */}
+      <Gallery ref={galleryRef} images={images} />
       <ContactForm />
       <Footer
-       scrollToHome={() => scrollToRef(homeRef)}
-       scrollToAboutUs={() => scrollToRef(aboutUsRef)}
-       scrollToGallery={() => scrollToRef(galleryRef)}
-       scrollToMentor={() => scrollToRef(mentorRef)}
-       scrollToEvent={() => scrollToRef(eventRef)}
-       />
-      </div>
+        scrollToHome={() => scrollToRef(homeRef)}
+        scrollToAboutUs={() => scrollToRef(aboutUsRef)}
+        scrollToGallery={() => scrollToRef(galleryRef)}
+        scrollToMentor={() => scrollToRef(mentorRef)}
+        scrollToEvent={() => scrollToRef(eventRef)}
+      />
+    </div>
   );
-}
+};
 
 export default Main;

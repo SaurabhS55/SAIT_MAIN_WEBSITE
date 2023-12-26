@@ -7,15 +7,10 @@ function ContactForm() {
   const [email, setEmail] = useState("");
   const [topic, setTopic] = useState("");
   const [message, setMessage] = useState("");
-  // const [isMailSent, setIsMailSent] = useState(false);
-
-  // const sendMail = () => {
-  //   setIsMailSent(true);
-  // };
   return (
-    <section className="py-3 py-md-5 py-xl-8 mt-5">
+    <section className="py-3 py-md-5 py-xl-8 mt-12 w-10/12 mx-auto">
       <div className="container">
-        <h2 className="colorfont">CONTACT US</h2>
+        <h2 className="">CONTACT US</h2>
         <div className="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
           <div className="col-12 col-lg-6 col-xl-5">
             <img

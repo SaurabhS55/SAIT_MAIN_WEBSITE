@@ -1,21 +1,23 @@
 import React from "react";
-import {  Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import EventDetails from "./Components/EventDetails";
 
 import Main from "./Main";
 import ClubServices from "./Components/ClubServices";
+import ImageState from "./Contexts/imageState";
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-     
+    <div className="App overflow-hidden">
+      <ImageState>
         <Routes>
-          <Route path="/" element={<Main/>} />
-            <Route path="/clubservice" element={ <ClubServices/>} />
-            <Route path="/EventDetails/:id" element={<EventDetails />} />
+          <Route path="/" element={<Main />} />
+          <Route path="/clubservice" element={<ClubServices />} />
+          <Route path="/EventDetails/:id" element={<EventDetails />} />
         </Routes>
-     
+      </ImageState>
     </div>
   );
 }

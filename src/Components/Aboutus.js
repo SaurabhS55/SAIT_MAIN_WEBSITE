@@ -1,46 +1,76 @@
+// import React, { forwardRef } from "react";
+// import SvgImage from "../Assets/sait.jpg";
+// import "../Style/Aboutus.css";
+
+// const AboutComponent = forwardRef((props, ref) => {
+//   return (
+//     <section ref={ref} className="py-8 try">
+//       <div className="container mx-auto flex flex-col items-center">
+//         <div className="text-4xl font-bold text-center gradient-text event_section_heading mb-8 md:mb-12 lg:mb-16">
+//           About Us
+//         </div>
+//         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+//           <div>
+//             {/* Image */}
+//             <img
+//               className="w-full h-auto rounded-md shadow-lg"
+//               loading="lazy"
+//               src={SvgImage}
+//               alt=""
+//             />
+//           </div>
+//           <div>
+//             {/* Text */}
+//             <p className="text-lg leading-relaxed mb-6 aboutfont">
+//               Students’ Association of Information Technology (SAIT),
+//               established in the year 2003, is a dynamic club formed by the students
+//               of the IT Department at Walchand College of Engineering, Sangli.
+//               <br />
+//               <br />
+//               SAIT is not just a club; it's a community passionate about technology,
+//               actively engaging in outreach and social initiatives. Our activities
+//               include weekly club services, mega events like Technobuzz and Techfusion,
+//               and various technical sessions (AWS, Networking, Hardware, IoT, etc.),
+//               coding competitions, and non-technical sessions.
+//             </p>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// });
+
+// export default AboutComponent;
 import React, { forwardRef } from "react";
 import SvgImage from "../Assets/sait.jpg";
-import "../Style/Aboutus.css";
 
 const AboutComponent = forwardRef((props, ref) => {
   return (
-    <section ref={ref} className="py-3 py-md-5 py-xl-8 try">
-      <div className="container">
-        <div className="text-[50px] font-bold text-center gradient-text event_section_heading mt-5">
-          About Us
-        </div>
-        <div className="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
-          <div className="col-12 col-md-6">
-            {/* 50% width for the image */}
-            <img
-              className="img-fluid rounded sizeimg"
-              loading="lazy"
-              src={SvgImage}
-              alt=""
-              style={{ width: '100%', margin: 0, padding: 0 }}
-            />
+    <section
+      ref={ref}
+      className="relative py-20 w-11/12 mx-auto rounded-lg mt-20 bg-cover bg-center text-white"
+      style={{ backgroundImage: `url(${SvgImage})` }}
+    >
+      <div className="absolute inset-0 bg-gradient-to-b from-black to-transparent opacity-70"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+      <div className="container mx-auto relative z-10 text-center">
+        <div className="md:w-2/3 mx-auto">
+          {/* Text */}
+          <div className="text-5xl font-bold gradient-text mb-8">
+            Welcome to SAIT
           </div>
-          <div className="col-12 col-md-6">
-            {/* 50% width for the text */}
-            <div className="row justify-content-center">
-              <div className="col-12 col-xl-11">
-                <p className="lead mb-1 aboutfont">
-                  Students’ Association of Information Technology (SAIT),
-                  established in the year 2003, is a club formed by the students
-                  of the IT Department of Walchand College of Engineering,
-                  Sangli. This organization is a nonprofit public benefit
-                  organization and is not organized for the private gain of any
-                  person. Our community is passionate about technology and
-                  actively engages in outreach and social initiatives. SAIT
-                  conducts weekly club services, 2 mega events named Technobuzz
-                  and Techfusion every year. SAIT conducts technical sessions
-                  like AWS workshop, Networking Workshop, Hardware Workshop, IoT
-                  Workshop, coding competitions, Club services on various
-                  technologies and non-technical sessions.
-                </p>
-              </div>
-            </div>
-          </div>
+          <p className="lg:text-lg leading-relaxed mb-8 aboutfont">
+            Students’ Association of Information Technology (SAIT), established
+            in 2003, is a vibrant club formed by the students of the IT
+            Department at Walchand College of Engineering, Sangli.
+            <br />
+            SAIT is more than a club, it's a community passionate about
+            technology, actively engaging in outreach and social initiatives.
+            Our activities include weekly club services, mega events like
+            Technobuzz and Techfusion, various technical sessions (AWS,
+            Networking, Hardware, IoT, etc.), coding competitions, and
+            non-technical sessions.
+          </p>
         </div>
       </div>
     </section>
