@@ -43,6 +43,7 @@ const Main = () => {
       // Remove the event listener when the component is unmounted
       window.removeEventListener("resize", handleResize);
     };
+    // eslint-disable-next-line
   }, []);
 
   return (
@@ -59,12 +60,12 @@ const Main = () => {
       <Aboutus ref={aboutUsRef} />
       <Event ref={eventRef} />
 
-      {/* <MentorPage ref={mentorRef} />
+      <MentorPage ref={mentorRef} />
       {screenWidth > 500 ? (
         <OurTeam ref={teamRef} />
       ) : (
         <TeamMobile ref={teamRef} />
-      )} */}
+      )}
       <Gallery ref={galleryRef} images={images} />
       <ContactForm />
       <Footer

@@ -11,7 +11,7 @@ const OurTeam = forwardRef((props, ref) => {
     const [ourTeam, setourTeam] = useState(1);
 
     return (
-      <div ref={ref} className="flex flex-col justify-between items-center">
+      <div ref={ref} className="flex flex-col justify-between items-center mt-12">
         <h2 className="text-[50px]  font-bold  text-center gradient-text event_section_heading  mt-5">Our Team</h2>
 
         <div className="flex flex-row justify-between text-white gap-2 mt-5">
@@ -31,11 +31,11 @@ const OurTeam = forwardRef((props, ref) => {
           </button>
         </div>
 
-        <div className="flex flex-row flex-wrap items-center gap-10 justify-center  ">
+        <div className="flex flex-row flex-wrap items-center gap-4 justify-center  ">
           {
             ourTeam === 1 && team && team.map((mentor) => {
               return (
-                <div className="mt-[20px] pt-[50px] mr-[20px]">
+                <div className="">
                   <Board mentor={mentor} />
                 </div>
               )
@@ -43,11 +43,11 @@ const OurTeam = forwardRef((props, ref) => {
 
           }
         </div>
-        <div className="flex flex-row flex-wrap items-center gap-10 justify-center ">
+        <div className="flex flex-row flex-wrap items-center gap-4 justify-center ">
           {
             ourTeam === 2 && assistant && assistant.map((mentor) => {
               return (
-                <div className="mt-[20px] pt-[50px] mr-[20px]">
+                <div className="">
                   <Board mentor={mentor} />
                 </div>
               )
