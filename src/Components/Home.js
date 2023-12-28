@@ -81,7 +81,7 @@ function Home() {
             </p>
             <div className="justify-center scale-90 md:scale-100 md:justify-normal flex space-x-4 mt-4">
               <button className="bg-gray-400 w-20 h-20 flex justify-center items-center rounded-full bg-opacity-20 ">
-                <img src={SvgImage0} alt="YouTube" className="h-20 invert" />
+                <img src={SvgImage0} alt="YouTube" className="h-20 invert z-10" />
               </button>
               <button className="bg-gray-400 w-20 h-20 flex justify-center items-center rounded-full bg-opacity-20 ">
                 <img src={SvgImage1} alt="LinkedIn" className="h-12 invert" />
@@ -93,7 +93,7 @@ function Home() {
           </div>
           <div className="md:ml-4 grid-item-2">
             <div className="">
-              <img src={SvgImage} alt="team-img" className=" drop-shadow-xl" />
+              <img src={SvgImage} alt="team-img" className=" drop-shadow-xl z-10" />
             </div>
           </div>
         </div>
