@@ -6,8 +6,9 @@ const ImageState = (props) => {
 
   const getImages = async () => {
     const password = process.env.REACT_APP_PASSWORD;
+    const backendUrl = process.env.REACT_APP_BACKEND_URL;
     console.log(password)
-    const response = await fetch("https://upload-image-sait.vercel.app/api/images/getImages", {
+    const response = await fetch(`${backendUrl}/images/getImages`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
