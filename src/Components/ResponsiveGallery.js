@@ -21,7 +21,14 @@ const ResponsiveGallery = forwardRef((props, ref) => {
     return new Date(dateString).toLocaleDateString(undefined, options);
   };
 
-  const recentImages = images.slice(0, 6);
+  const recentImages = (images.length!==0)?images.filter((image)=>{
+    console.log(image.identifier)
+    if(image.identifier.indexOf("gallery")!==-1){
+      return image;
+    }else{
+      return null;
+    }
+  }).slice(0,6):[];
 
   return (
     <div>
