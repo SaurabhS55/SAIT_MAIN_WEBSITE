@@ -9,7 +9,7 @@ const Event = forwardRef((props, ref) =>  {
   const navigate = useNavigate();
 
   return (
-    <div ref={ref} className=" event_section">
+    <div ref={ref} className="p-4 event_section">
      <div className="text-[50px] font-bold text-center gradient-text event_section_heading mt-5">
   Events
 </div>
