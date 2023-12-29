@@ -13,7 +13,6 @@ const ResponsiveGallery = forwardRef((props, ref) => {
 
   const handleImageSelect = (image) => {
     setSelectedImage(image);
-    console.log(selectedImage)
   };
 
   const formatDate = (dateString) => {
@@ -22,7 +21,6 @@ const ResponsiveGallery = forwardRef((props, ref) => {
   };
 
   const recentImages = (images.length!==0)?images.filter((image)=>{
-    console.log(image.identifier)
     if(image.identifier.indexOf("gallery")!==-1){
       return image;
     }else{

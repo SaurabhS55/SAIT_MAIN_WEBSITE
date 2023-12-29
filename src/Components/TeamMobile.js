@@ -1,20 +1,19 @@
-import React, { useState ,forwardRef} from "react";
+import React, { useState, forwardRef } from "react";
 import Board from "./Board";
 
 import { FcNext } from "react-icons/fc";
 import { FcPrevious } from "react-icons/fc";
-import "../Style/TeamMobile.css"
 
-import team  from "../Data/MainBoard";
+import team from "../Data/MainBoard";
 import assistant from "../Data/AssistantBoard";
 
-const TeamMobile = forwardRef((props, ref) =>  { 
-  const [ourTeam, setOurTeam] = useState(1);
+const TeamMobile = forwardRef((props, ref) => {
+  const [ourTeam, setourTeam] = useState(1);
   const [currentCard, setCurrentCard] = useState(0);
   const [data, setData] = useState(team);
 
   const handleNext = () => {
-    if (currentCard < team.length - 1) {
+    if (currentCard < data.length - 1) {
       setCurrentCard(currentCard + 1);
     } else {
       setCurrentCard(0); // Wrap to the first card when reaching the end
@@ -25,7 +24,7 @@ const TeamMobile = forwardRef((props, ref) =>  {
     if (currentCard > 0) {
       setCurrentCard(currentCard - 1);
     } else {
-      setCurrentCard(team.length - 1); // Wrap to the last card when at the beginning
+      setCurrentCard(data.length - 1); // Wrap to the last card when at the beginning
     }
   };
 
@@ -35,74 +34,66 @@ const TeamMobile = forwardRef((props, ref) =>  {
         Our Team
       </h2>
 
-      <div className="flex flex-row justify-between text-white gap-2 mt-5 mb-5">
+      <div className=" text-white text-center  mt-4  mb-4  ">
         <button
-          className={`rounded-md px-4  py-1 ${
+          className={`w-fit mx-auto rounded-md px-4 py-3 mb-2 ${
             ourTeam === 1 ? "bg-blue-500" : "bg-black"
           } hover:bg-blue-600 transition duration-300 ease-in-out`}
           onClick={() => {
-            setOurTeam(1);
-            setCurrentCard(0);
+            setourTeam(1);
             setData(team);
+            setCurrentCard(0);
           }}
         >
           Main Board
         </button>
-        <button
-          className={`rounded-md px-4 py-1 ${
-            ourTeam === 2 ? "bg-blue-500" : "bg-black"
-          } hover:bg-blue-600 transition duration-300 ease-in-out`}
-          onClick={() => {
-            setOurTeam(2);
-            setCurrentCard(0);
-            setData(assistant);
-          }}
-        >
-          Assistant Board
-        </button>
-      </div>
-
-      <div className="slider-container  flex items-center gap-2">
-        
-          <FcPrevious size={25} className=" prevarrow mr-[-10px]" onClick={handlePrev} />
-             
-              
-        <div className="slider">
-          {ourTeam === 1 &&
-            data &&
-            data.map((mentor, index) => (
-              <div
-                className={`slider-item ${
-                  index === currentCard ? "visible" : "hidden"
-                }`}
-                key={mentor.name}
-              >
-                <Board mentor={mentor} />
-              </div>
-            ))}
-          ;
+        <div className="flex gap-2 justify-center">
+          <button
+            className={`rounded-md px-4 py-2 ${
+              ourTeam === 0 ? "bg-blue-500" : "bg-black"
+            } hover:bg-blue-600 transition duration-300 ease-in-out`}
+            onClick={() => {
+              setourTeam(0);
+              setData(null);
+              setCurrentCard(0);
+            }}
+          >
+            Member Board
+          </button>
+          <button
+            className={`rounded-md px-4 py-2 ${
+              ourTeam === 2 ? "bg-blue-500" : "bg-black"
+            } hover:bg-blue-600 transition duration-300 ease-in-out`}
+            onClick={() => {
+              setourTeam(2);
+              setData(assistant);
+              setCurrentCard(0);
+            }}
+          >
+            Assistant Board
+          </button>
         </div>
-      <div className="">
-  {ourTeam === 2 &&
-    data &&
-    data.map((mentor, index) => (
-      <div
-        className={`slider-item  ${
-          index === currentCard ? "visible ml-[-30px] mt-[-20px] " : "hidden"
-        } `}
-        key={mentor.name}
-      >
-        <Board mentor={mentor} style={{ width: '100%' }} />
       </div>
-    ))}
-</div>
 
-        
-          <FcNext size={25} className="" onClick={handleNext} />
-        
+      <div className="w-full px-6 py-2 flex relative items-center gap-2">
+        <FcPrevious
+          size={28}
+          className="absolute left-8 cursor-pointer"
+          onClick={handlePrev}
+        />
+
+        <div className="slider mx-auto">
+          {data && data[currentCard] ? (
+            <div>
+              <Board mentor={data[currentCard]} />
+            </div>
+          ) : (
+            <div></div>
+          )}
+        </div>
+        <FcNext size={28} className="absolute right-8 cursor-pointer" onClick={handleNext} />
       </div>
     </div>
   );
-}
-);
+});
 export default TeamMobile;

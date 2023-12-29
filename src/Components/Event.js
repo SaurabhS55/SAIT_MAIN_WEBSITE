@@ -43,6 +43,7 @@ const Event = forwardRef((props, ref) =>  {
                 <Link
                   to={"https://sait-techfusion-2-0.vercel.app/"}
                   className="bg-[#288CEF] w-[130px] h-[40px] px-3 py-2 text-white font-semibold rounded-lg cursor-pointer"
+                  target="_blank"
                 >
                   Visit Website
                 </Link>

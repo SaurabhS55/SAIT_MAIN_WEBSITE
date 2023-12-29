@@ -31,7 +31,6 @@ const Main = () => {
 
   useEffect(() => {
     getImages();
-    console.log(images);
 
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
@@ -61,7 +60,7 @@ const Main = () => {
       <Event ref={eventRef} />
 
       <MentorPage ref={mentorRef} />
-      {screenWidth > 500 ? (
+      {screenWidth > 768 ? (
         <OurTeam ref={teamRef} />
       ) : (
         <TeamMobile ref={teamRef} />
