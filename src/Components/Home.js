@@ -3,6 +3,7 @@ import SvgImage0 from "../Assets/YouTube.png";
 import SvgImage1 from "../Assets/LinkedIn.png";
 import SvgImage2 from "../Assets/Instagram.png";
 import SvgImage from "../Assets/amico.png";
+import "../Style/Home.css";
 
 function Home() {
   useEffect(() => {}, []);
@@ -17,6 +18,11 @@ function Home() {
               <br />
               Next To The <span className="text-pink-400">Perfection</span>
             </h1>
+            {/* <h1 className="main-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+              Beyond The <span className="magic">Limitations</span>
+              <br />
+              Next To The <span className="magic">Perfection</span>
+            </h1> */}
             <p className="text-lg md:text-xl lg:text-2xl text-gray-100 mb-6">
               Discover a world of possibilities and perfection with us. Join our community and explore together!
             </p>

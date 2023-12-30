@@ -111,3 +111,154 @@ section .title {
   padding-bottom: 0px;
   transition: 15sec;
 }
+
+/* 
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@500;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+    
+}
+
+body {
+  background-color: #1d1d1ded;
+  font-family: "Poppins", sans-serif;  
+  }
+
+
+
+
+.fields {
+  display: flex;
+}
+
+.floating {
+  animation: floatAnimation 1000ms infinite ease-in-out;
+}
+@keyframes floatAnimation {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+form .field,
+form .fields .field {
+  height: 38px;
+  width: 100%;
+  margin-bottom: 15px;
+  
+}
+
+
+
+form .textarea {
+  height: 80px;
+  width: 100%;
+}
+
+form .name {
+  margin-right: 10px;
+}
+
+form .field input,
+form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #0b0101;
+  border-radius: 6px;
+  background-color: #162532;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25),
+  inset -2px -2px 4px rgba(224, 221, 221, 0.485);
+  
+}
+
+form .field input:hover,
+form .textarea textarea:hover {
+
+  color: rgb(246, 245, 245);
+  filter: brightness(0.9);
+  
+}
+
+form .textarea textarea {
+  padding-top: 10px;
+  resize: none;
+}
+
+form .button-area {
+  display: flex;
+  align-items: center;
+  
+}
+
+form .button-area button {
+  display: block;
+  background: #3c4651;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 8px 24px;
+  margin-top: 8px;
+  border-radius: 11px;
+  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25),
+  inset -2px -2px 4px rgba(224, 221, 221, 0.485);
+}
+
+form .button-area button:focus{
+  filter: brightness(1.2);
+  transform: translateY(2px);
+}
+
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+
+}
+
+@media (max-width: 947px) {
+  .contact .contact-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  .contact .right form .fields {
+    flex-direction: column;
+  }
+  .contact .right form .name,
+  .contact .right form .email {
+    margin: 0;
+  }
+}
+
+section .title {
+  position: relative;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: -22px;
+  background-image: linear-gradient(to left, #7CBCFC, #3096FB, #015DB9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  padding-bottom: 0px;
+  transition: 15sec;
+} */

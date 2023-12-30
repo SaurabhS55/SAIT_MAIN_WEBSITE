@@ -1,4 +1,3 @@
-
 import React, { forwardRef } from "react";
 import SvgImage from "../Assets/sait.jpg";
 
@@ -17,6 +16,29 @@ const AboutComponent = forwardRef((props, ref) => {
           <div className="text-5xl font-bold gradient-text mb-8">
             Welcome to SAIT
           </div>
+
+          {/* <div
+            className="text-5xl font-bold gradient-text mb-8
+             flex justify-center align-center
+             text-center
+             content
+          "
+          >
+            <h2
+              className="txt
+               text-center
+              "
+            >
+              Welcome to SAIT
+            </h2>
+            <h2
+              className="txt
+                text-center
+              "
+            >
+              Welcome to SAIT
+            </h2>
+          </div> */}
           <p className="lg:text-lg leading-relaxed mb-8 aboutfont">
             Students’ Association of Information Technology (SAIT), established
             in 2003, is a vibrant club formed by the students of the IT

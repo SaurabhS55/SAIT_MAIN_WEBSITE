@@ -4,7 +4,7 @@ const Asst =
         "name": "Prapti  Gawande",
         "Board": "Asst.",
         "position": "Asst. CSD",
-        "img_url": "hhttps://res.cloudinary.com/du3cgjere/image/upload/v1693624854/sait%20images/Prapti_Gawande_saci3u.jpg",
+        "img_url": "https://res.cloudinary.com/du3cgjere/image/upload/v1693624854/sait%20images/Prapti_Gawande_saci3u.jpg",
         "linkedin_link": "https://www.linkedin.com/in/prapti-gawande-54003b25a",
         "github_link": "https://github_linkptigawande2812",
         "instagram_link": "https://instagram.com/praptigawande_28?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"
