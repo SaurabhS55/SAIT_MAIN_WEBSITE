@@ -1,0 +1,110 @@
+.responsive-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .try{
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  
+  .left-gallery,
+  .right-gallery {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .left-gallery .gallery-column,
+  .right-gallery .gallery-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .left-gallery img,
+  .right-gallery img {
+    width: 100%;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 1px;
+    margin: 10px;
+    border-top: 1px solid #03264a;
+    border-bottom: 1px solid #297CCF;
+    border-left: 1px solid #03264a;
+    border-right: 1px solid #297CCF;
+    filter: grayscale(70%); /* Apply grayscale filter by default */
+  }
+  
+  .center-gallery {
+    flex: 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .center-gallery img {
+    width: 90%;
+    height: 400px;
+    margin-left: 0px;
+    margin-right: 0px;
+    cursor: pointer;
+    border-radius: 14px;
+    border-top: 5px solid #03264a;
+    border-bottom: 5px solid #297CCF;
+    border-left: 5px solid #03264a;
+    border-right: 5px solid #297CCF;
+    filter: none; /* Remove grayscale filter for the center image */
+  }
+  
+  /* Media query for tablets and mobile phones */
+  @media (max-width: 768px) {
+    .responsive-gallery {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0px;
+    }
+  
+    .left-gallery,
+    .right-gallery {
+      flex: 2;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .center-gallery {
+      display: flex;
+      width: 92%;
+    }
+  
+    .left-gallery img,
+    .right-gallery img {
+      width: 30%; /* Adjust the image width for smaller screens */
+      height: 30%; /* Adjust the image height for smaller screens */
+      margin: 4px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      filter: grayscale(80%); /* Apply grayscale filter for side images */
+    }
+  
+    .center-gallery img {
+      width: 100%; /* Center image takes up full width */
+      height: auto; /* Maintain aspect ratio */
+      max-height: 300px; /* Limit the height of the center image */
+      filter: none; /* Remove grayscale filter for the center image */
+    }
+  }
+  html {
+    scroll-behavior: smooth;
+  }
