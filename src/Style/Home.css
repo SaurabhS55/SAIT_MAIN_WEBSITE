@@ -1,4 +1,4 @@
-root {
+/* root {
     --purple: rgb(81, 0, 115);
     --violet: rgb(137, 70, 252);
     --pink: rgb(255, 114, 161);
@@ -38,4 +38,4 @@ h1 {
             var(--violet),
             var(--pink));
 
-}
+} */
