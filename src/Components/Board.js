@@ -23,7 +23,7 @@ const Board = ({ mentor }) => {
               href={mentor.github_link}
               target="_blank"
               aria-label="GitHub"
-              className="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-500 transition-all hover:scale-105"
+              className="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-500 transition-all hover:scale-105 group-hover:bg-[#0e2032e5]"
             >
               <FaGithub className="w-6 h-6 fill-current" />
             </a>
@@ -32,7 +32,7 @@ const Board = ({ mentor }) => {
               href={mentor.linkedin_link}
               target="_blank"
               aria-label="LinkedIn"
-              className="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-500 transition-all hover:scale-105"
+              className="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-500 transition-all hover:scale-105 group-hover:bg-[#0e2032e5]"
             >
               <FaLinkedin className="w-6 h-6 fill-current" />
             </a>
@@ -41,7 +41,7 @@ const Board = ({ mentor }) => {
               href={mentor.instagran_link}
               target="_blank"
               aria-label="Instagram"
-              className="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-500 transition-all hover:scale-105"
+              className="p-2 rounded-md dark:text-gray-100 hover:dark:text-violet-500 transition-all hover:scale-105 group-hover:bg-[#0e2032e5]"
             >
               <FaInstagram className="w-6 h-6 fill-current"></FaInstagram>
             </a>
