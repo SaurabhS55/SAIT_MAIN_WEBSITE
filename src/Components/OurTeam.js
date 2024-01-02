@@ -47,7 +47,7 @@ const OurTeam = forwardRef((props, ref) => {
           team &&
           team.map((mentor) => {
             return (
-              <div className="">
+              <div className="" key={mentor.Name}>
                 <Board mentor={mentor} />
               </div>
             );
@@ -58,7 +58,7 @@ const OurTeam = forwardRef((props, ref) => {
           assistant &&
           assistant.map((mentor) => {
             return (
-              <div className="">
+              <div className="" key={mentor.Name}>
                 <Board mentor={mentor} />
               </div>
             );

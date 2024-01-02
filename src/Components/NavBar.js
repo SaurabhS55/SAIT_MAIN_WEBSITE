@@ -117,6 +117,7 @@ const CustomNavbar = ({
                 }}
                 onMouseEnter={() => setHoveredLink(index)}
                 onMouseLeave={() => setHoveredLink(null)}
+                key={index}
               >
                 {icon}
               </a>

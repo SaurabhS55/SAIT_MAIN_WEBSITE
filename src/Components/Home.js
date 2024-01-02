@@ -32,7 +32,7 @@ function Home() {
               <br />
               Next To The <span className="text-pink-400">Perfection</span>
             </h1> */}
-            <h1 className="overflow-hidden leading-6 text-white main-heading1 text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+            <h1 className="overflow-hidden leading-6 text-white main-heading1 text-4xl md:text-4xl lg:text-5xl font-bold mb-4">
               {Array(text1).map((char, index) => (
                 <span
                   className={`main-heading2 inline-block [animation-fill-mode:backwards] bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.indigo.400),theme(colors.indigo.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto] animate-gradient`}
