@@ -1,6 +1,6 @@
 const data =[
     {
-        "Name": "Kedarnath Prasad Chavan",
+        "Name": "Kedarnath Chavan",
         "Board": "Main",
         "Position": "Club Service Director",
         "Photo": "https://res.cloudinary.com/du3cgjere/image/upload/v1693624847/sait%20images/Kedarnath_Chavan_vc5qvt.jpg",

@@ -8,7 +8,8 @@ const Board = ({ mentor }) => {
   },[])
   return (
     <div className=" min-w-[250px] group relative cursor-pointer overflow-hidden bg-[#0e2032e5] py-6 px-6 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl rounded-lg">
-      <span className="absolute top-20 left-24 z-0 h-20 w-20 rounded-full bg-[#183b5ce5] transition-all duration-700 group-hover:scale-[10] group-hover:"></span>
+      {/* <span className="absolute top-20 left-24 z-0 h-20 w-20 rounded-full bg-[#183b5ce5] transition-all duration-700 group-hover:scale-[10]"></span> */}
+      <span className="absolute top-20 left-24 z-0 h-20 w-20 rounded-full bg-[#183b5ce5] transition-all duration-700 group-hover:scale-[10]"></span>
       <div className="relative z-10 mx-auto max-w-md space-y-3">
         <img
           src={mentor.Photo}
