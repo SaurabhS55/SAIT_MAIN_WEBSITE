@@ -1,4 +1,4 @@
-import React, { useState, forwardRef } from "react";
+import React, { useState} from "react";
 import Board from "./Board";
 import Data from "../Data/sait_mentor";
 import { FcNext } from "react-icons/fc";
@@ -6,6 +6,7 @@ import { FcPrevious } from "react-icons/fc";
 
 const MentorMobile = ({props,ref}) => {
   const [currentCard, setCurrentCard] = useState(0);
+  // eslint-disable-next-line   
   const [data, setData] = useState(Data);
 
   const handleNext = () => {

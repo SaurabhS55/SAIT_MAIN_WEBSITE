@@ -1,4 +1,4 @@
-﻿const data =[
+const data =[
     {
         "Name": "Mandar kamble",
         "Board": "Mentor",

@@ -58,14 +58,14 @@
 
 // export default ResponsiveGallery;
 
-import React, { useState, forwardRef, useContext, useEffect } from "react";
+import React, { useState, forwardRef, useContext } from "react";
 import imageContext from "../Contexts/imageContext";
 import "../Style/Gallery.css";
 
 const ResponsiveGallery = forwardRef((props, ref) => {
   const [selectedImage, setSelectedImage] = useState({imageLink:""});
   const context = useContext(imageContext);
-  const { images, getImages } = context;
+  const { images } = context;
 
   const handleImageSelect = (image) => {
     setSelectedImage(image);

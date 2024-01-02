@@ -1,12 +1,11 @@
 
 import "../Style/Event.css";
 import React,{forwardRef} from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import events from "../Data/EventData";
 
 
 const Event = forwardRef((props, ref) =>  {
-  const navigate = useNavigate();
 
   return (
     <div ref={ref} className="p-4 event_section">

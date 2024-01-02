@@ -1,4 +1,4 @@
-﻿ const data = [
+ const data = [
     {
         "Name": "Prapti Naresh Gawande",
         "Board": "Assistant",

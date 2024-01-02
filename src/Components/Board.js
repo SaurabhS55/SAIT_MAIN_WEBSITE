@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const Board = ({ mentor }) => {
   useEffect(()=>{
     console.log(mentor)
+    // eslint-disable-next-line
   },[])
   return (
     <div className=" min-w-[250px] group relative cursor-pointer overflow-hidden bg-[#0e2032e5] py-6 px-6 shadow-xl ring-1 ring-gray-900/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl rounded-lg">
