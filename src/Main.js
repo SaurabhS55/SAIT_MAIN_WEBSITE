@@ -10,6 +10,7 @@ import Footer from "./Components/Footer";
 import NavBar from "./Components/NavBar";
 import Gallery from "./Components/ResponsiveGallery";
 import imageContext from "./Contexts/imageContext";
+import MentorMobile from "./Components/MentorMobile";
 
 const Main = () => {
   const context = useContext(imageContext);
@@ -59,7 +60,11 @@ const Main = () => {
       <Aboutus ref={aboutUsRef} />
       <Event ref={eventRef} />
 
-      <MentorPage ref={mentorRef} />
+      {screenWidth > 768 ? (
+        <MentorPage ref={mentorRef} />
+      ) : (
+        <MentorMobile ref={mentorRef}></MentorMobile>
+      )}
       {screenWidth > 768 ? (
         <OurTeam ref={teamRef} />
       ) : (

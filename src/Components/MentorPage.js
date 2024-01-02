@@ -1,6 +1,6 @@
 import React ,{forwardRef} from "react";
 import Board from "./Board";
-import mentors from "../Data/MentorTeacher";
+import mentors from "../Data/sait_mentor";
 import "../Style/MentorPage.css"
 
 

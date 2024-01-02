@@ -4,8 +4,9 @@ import Board from "./Board";
 import { FcNext } from "react-icons/fc";
 import { FcPrevious } from "react-icons/fc";
 
-import team from "../Data/MainBoard";
-import assistant from "../Data/AssistantBoard";
+import team from "../Data/sait_main";
+import assistant from "../Data/sait_assistant";
+
 
 const TeamMobile = forwardRef((props, ref) => {
   const [ourTeam, setourTeam] = useState(1);
@@ -29,7 +30,7 @@ const TeamMobile = forwardRef((props, ref) => {
   };
 
   return (
-    <div ref={ref} className="flex flex-col justify-between items-center ">
+    <div ref={ref} className="flex flex-col justify-between items-center mt-10 ">
       <h2 className="text-[50px] font-bold text-center gradient-text event_section_heading mt-5">
         Our Team
       </h2>

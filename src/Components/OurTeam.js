@@ -1,8 +1,8 @@
 import React, { useState, forwardRef } from "react";
 import Board from "./Board";
 
-import team from "../Data/MainBoard";
-import assistant from "../Data/AssistantBoard";
+import team from "../Data/sait_main";
+import assistant from "../Data/sait_assistant";
 
 const OurTeam = forwardRef((props, ref) => {
   const [ourTeam, setourTeam] = useState(1);

@@ -7,7 +7,7 @@ const ImageState = (props) => {
   const getImages = async () => {
     const password = process.env.REACT_APP_PASSWORD;
     const backendUrl = process.env.REACT_APP_BACKEND_URL;
-    const response = await fetch(`${backendUrl}/images/getImages`, {
+    const response = await fetch(`${backendUrl}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
