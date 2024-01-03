@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useContext } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Aboutus from "./Components/Aboutus";
 import ContactForm from "./Components/ContactForm";
 import Home from "./Components/Home";
@@ -9,12 +9,9 @@ import TeamMobile from "./Components/TeamMobile";
 import Footer from "./Components/Footer";
 import NavBar from "./Components/NavBar";
 import Gallery from "./Components/ResponsiveGallery";
-import imageContext from "./Contexts/imageContext";
 import MentorMobile from "./Components/MentorMobile";
 
 const Main = () => {
-  const context = useContext(imageContext);
-  const { images, getImages } = context;
   const homeRef = useRef(null);
   const aboutUsRef = useRef(null);
   const galleryRef = useRef(null);
@@ -31,8 +28,6 @@ const Main = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    getImages();
-
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
     };
@@ -70,7 +65,7 @@ const Main = () => {
       ) : (
         <TeamMobile ref={teamRef} />
       )}
-      <Gallery ref={galleryRef} images={images} />
+      <Gallery ref={galleryRef}/>
       <ContactForm />
       <Footer
         scrollToHome={() => scrollToRef(homeRef)}

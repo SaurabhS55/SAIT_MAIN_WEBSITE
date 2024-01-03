@@ -42,13 +42,13 @@ function Home() {
             </p>
             <div className=" scale-90 md:scale-100 md:justify-normal flex space-x-6 mt-4 mb-3">
               <button className="bg-gray-400 w-16 h-16 flex justify-center items-center rounded-full bg-opacity-20 ">
-                <img src={SvgImage0} alt="YouTube" className="h-16 invert" />
+                <a href="https://www.youtube.com/@wcesait5335/" target="_blank" rel="noreferrer"><img src={SvgImage0} alt="YouTube" className="h-16 invert" /></a>
               </button>
               <button className="bg-gray-400 w-16 h-16 flex justify-center items-center rounded-full bg-opacity-20 ">
-                <img src={SvgImage1} alt="LinkedIn" className="h-8 invert" />
+                <a href="https://www.linkedin.com/company/wcesait/" target="_blank" rel="noreferrer"><img src={SvgImage1} alt="LinkedIn" className="h-8 invert" /></a>
               </button>
               <button className="bg-gray-400 w-16 h-16 flex justify-center items-center rounded-full bg-opacity-20 ">
-                <img src={SvgImage2} alt="Instagram" className="h-8 invert" />
+                <a href="https://www.instagram.com/wce_sait/"  target="_blank" rel="noreferrer"><img src={SvgImage2} alt="Instagram" className="h-8 invert" /></a>
               </button>
             </div>
           </div>
