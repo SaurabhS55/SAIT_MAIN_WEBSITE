@@ -5,7 +5,7 @@ import data from "../Data/GalleryImage";
 
 const ResponsiveGallery = forwardRef((props, ref) => {
   const [selectedImage, setSelectedImage] = useState({ imageLink: "" });
-  const images = data
+  const images = data.slice(0,13)
 
   const handleImageSelect = (image) => {
     setSelectedImage(image);
@@ -39,12 +39,12 @@ const ResponsiveGallery = forwardRef((props, ref) => {
           <div className="center-gallery">
             <img
               src={selectedImage.imageLink || images[7].imageLink}
-              alt={images[7].title}
+              alt={images[6].title}
               onClick={() => handleImageSelect(null)}
             />
           </div>
           <div className="right-gallery">
-            {images.slice(8, 11).map((image) => (
+            {images.slice(6, 9).map((image) => (
               <img
                 key={image.id}
                 src={image.imageLink}
@@ -54,7 +54,7 @@ const ResponsiveGallery = forwardRef((props, ref) => {
             ))}
           </div>
           <div className="right-gallery">
-            {images.slice(11, 14).map((image) => (
+            {images.slice(9).map((image) => (
               <img
                 key={image.id}
                 src={image.imageLink}
