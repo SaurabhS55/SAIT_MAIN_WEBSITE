@@ -11,7 +11,7 @@ const data = [
       "https://instagram.com/praptigawande_28?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D",
   },
   {
-    Name: "Parag Pradeep Patkulkar",
+    Name: "Parag Patkulkar",
     Board: "Assistant",
     Position: "Assistant Program Director",
     Photo:
@@ -74,7 +74,7 @@ const data = [
     InstagramProfile: "https://www.instagram.com/rucha_ikare/",
   },
   {
-    Name: "Shreyas Shrikant Kamble",
+    Name: "Shreyas Kamble",
     Board: "Assistant",
     Position: "Assistant Web Developer",
     Photo:
@@ -159,7 +159,7 @@ const data = [
   {
     Name: "Divya Amrutrao Tarkase",
     Board: "Assistant",
-    Position: "Assistant Public Relations Officer",
+    Position: "Assistant Public Relation Officer",
     Photo:
       "https://res.cloudinary.com/du3cgjere/image/upload/v1693624845/sait%20images/Divya_Tarkase_zesjnq.jpg",
     LinkedInProfile: "https://www.linkedin.com/in/divya-tarkase-56ab30265",
@@ -188,7 +188,7 @@ const data = [
     InstagramProfile: "https://www.instagram.com/tanmayshingde",
   },
   {
-    Name: "Vighnesh Sadanand Potdar",
+    Name: "Vighnesh Potdar",
     Board: "Assistant",
     Position: "Assistant Web Developer",
     Photo:
@@ -229,7 +229,7 @@ const data = [
     InstagramProfile: "https://www.instagram.com/Cadet_0110",
   },
   {
-    Name: "hemant sharma",
+    Name: "Hemant Sharma",
     Board: "Assistant",
     Position: "Assistant Club Service Director",
     Photo:
@@ -259,6 +259,17 @@ const data = [
     InstagramProfile:
       "https://instagram.com/_vaibhav_7897?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D",
   },
+
+  {
+    Name: "Ameya Unchagaonkar",
+    Board: "Assistant",
+    Position: "Assistant Aptitude Developer",
+    Photo:
+      "https://res.cloudinary.com/du3cgjere/image/upload/v1693624841/sait%20images/Ameya_Uchagaonkar_kpzvbc.png",
+    LinkedInProfile: "https://www.linkedin.com/in/ameya-unchagaonkar-13b99327a",
+    GitHubProfile: "https://github.com/aunchagaonkar",
+    InstagramProfile: "",
+  },
   {
     Name: "Vidyadhar Dinde",
     Board: "Assistant",
@@ -270,16 +281,6 @@ const data = [
     InstagramProfile: "https://www.instagram.com/_vidyadhar_d/",
   },
   {
-    Name: "Ameya Vijay Unchagaonkar",
-    Board: "Assistant",
-    Position: "Assistant Aptitude Developer",
-    Photo:
-      "https://res.cloudinary.com/du3cgjere/image/upload/v1693624841/sait%20images/Ameya_Uchagaonkar_kpzvbc.png",
-    LinkedInProfile: "https://www.linkedin.com/in/ameya-unchagaonkar-13b99327a",
-    GitHubProfile: "https://github.com/aunchagaonkar",
-    InstagramProfile: "",
-  },
-  {
     Name: "Satej Sandeep Sawant",
     Board: "Assistant",
     Position: "Assistant Programming Expert",
@@ -288,6 +289,54 @@ const data = [
     LinkedInProfile: "https://www.linkedin.com/in/satej-sawant-92a8a4269",
     GitHubProfile: "https://github.com/SatejSawant45",
     InstagramProfile: "https://www.instagram.com/satej.s",
+  },
+  {
+    Name: "Prathamesh Patil",
+    Board: "Assistant",
+    Position: "Assistant Public Relation Officer",
+    Photo: "https://res.cloudinary.com/dptdrzycj/image/upload/v1704356513/23620003_-_Prathamesh_Patil_hv20xp.jpg",
+    LinkedInProfile:
+      "https://www.linkedin.com/in/prathamesh-patil-20b8aa28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    GitHubProfile: null,
+    InstagramProfile: "https://www.instagram.com/07_pratham_patil",
+  },
+  {
+    Name: "Sandesh Shivaji Shinde",
+    Board: "Assistant",
+    Position: "Assistant Club Service Director",
+    Photo: "https://res.cloudinary.com/dptdrzycj/image/upload/v1704356554/20231231_175933_-_Sandesh_Shinde_bhcg8x.jpg",
+    LinkedInProfile: "www.linkedin.com/in/sandesh-shinde-s1730",
+    GitHubProfile: "https://github.com/sandeshshinde30",
+    InstagramProfile: "https://www.instagram.com/sandesh_shinde_1730/",
+  },
+  {
+    Name: "Sharvari Jadhav",
+    Board: "Assistant",
+    Position: "Secretary",
+    Photo: "https://res.cloudinary.com/dptdrzycj/image/upload/v1704356594/Sharvari_Jadhav_-_Sharvari_Jadhav_izrikj.jpg",
+    LinkedInProfile: "https://www.linkedin.com/in/jadhav-sharvari09",
+    GitHubProfile: "https://github.com/sharvari-09",
+    InstagramProfile: null,
+  },
+  {
+    Name: "Shashank Pujari",
+    Board: "Assistant",
+    Position: "Assistant Club Service Director",
+    Photo: "https://res.cloudinary.com/dptdrzycj/image/upload/v1704356647/IMG-20230218-WA0019_2_-_22610045_PUJARI_SHASHANK_SHRIDHAR_ggw43j.jpg",
+    LinkedInProfile:
+      "https://www.linkedin.com/in/shashank-pujari-624190261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    GitHubProfile: null,
+    InstagramProfile:
+      "https://www.instagram.com/shashankpujari_18?igsh=djd5YWR2ZXJrbml6",
+  },
+  {
+    Name: "Mahemud Borgave",
+    Board: "Assistant",
+    Position: "Assistant Aptitude Developer",
+    Photo: "https://res.cloudinary.com/dptdrzycj/image/upload/v1704356686/md_1_-_23620005_BORGAVE_MAHEMUD_USMAN_nnhxht.jpg",
+    LinkedInProfile: "https://www.linkedin.com/in/mahemud-borgave-b01762231/",
+    GitHubProfile: "https://github.com/mahemudborgave",
+    InstagramProfile: "https://www.instagram.com/95_mahemud/",
   },
 ];
 

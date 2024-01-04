@@ -17,7 +17,7 @@ const ClubServices = forwardRef((props, ref) => {
         Club Services
       </div>
 
-      <div className="flex flex-wrap justify-center items-center event_section_events gap-[30px] mt-5">
+      <div className="flex flex-wrap justify-center items-center event_section_events gap-[30px] mt-2">
         {clubServices.map((event, i) => {
           return (
             <div
@@ -29,7 +29,7 @@ const ClubServices = forwardRef((props, ref) => {
                 <img
                   src={event.poster_url}
                   alt="Events dont have poster"
-                  className="w-[99%] h-[300px] rounded-[10px] object-fill poster_img"
+                  className="w-fit h-[300px] rounded-[10px] object-fill poster_img"
                 />
               </div>
 
@@ -38,7 +38,7 @@ const ClubServices = forwardRef((props, ref) => {
               </div>
               <div>
                 <p className="text-gray-100 text-sm mb-4 description">
-                  {event.description.substring(0, 200) + " ..."}
+                  {event.description.substring(0, 150) + " ..."}
                 </p>
               </div>
               <div className="knowMore">
