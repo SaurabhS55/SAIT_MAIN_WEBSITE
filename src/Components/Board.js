@@ -9,7 +9,7 @@ const Board = ({ mentor }) => {
         <div className="relative z-10 mx-auto max-w-md space-y-3 transition-all group-hover:shadow-lg">
           <img
             loading="lazy"
-            placeholder="blur"
+            placeholder={mentor.Namess}
             src={mentor.Photo}
             alt={mentor.Name}
             className="w-[9rem] h-[9rem] mx-auto rounded-full aspect-square bg-gray-400 transition-all duration-300"
