@@ -104,7 +104,7 @@ function Footer({
               </a>
             </li>
             <li>
-              <a className="p-1 flex space-x-2 items-center" href="#Gallery" onClick={scrollToGallery}>
+              <a className="p-1 flex space-x-2 items-center" href="/instaposts" onClick={scrollToGallery}>
                 <FaInstagram></FaInstagram>
                 <span>Instagram Posts</span>
               </a>
