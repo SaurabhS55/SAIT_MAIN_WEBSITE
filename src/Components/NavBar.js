@@ -82,7 +82,7 @@ const CustomNavbar = ({
   ];
 
   return (
-    <nav className="p-4 mb-4">
+    <nav className="p-4 lg:px-8 mb-4">
       <div className="px-3 lg:px-14 mx-auto flex items-center justify-between">
         <a href="/" className="flex items-center text-white">
           <img
