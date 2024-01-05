@@ -11,7 +11,7 @@ function Home() {
   const text2 = "Next To The Perfection";
 
   return (
-    <div className="container w-11/12 rounded-3xl bg-gradient-to-b from-[#015DB9] to-[#022141] text-white">
+    <div className="container w-[90%] rounded-3xl bg-gradient-to-b from-[#015DB9] to-[#022141] text-white">
       <section className="wrapper flex justify-center items-center p-4 md:p-12">
         <div className="container w-full mx-auto md:space-x-4 grid md:grid-cols-2  justify-center items-center">
           <div className="grid-item-1">

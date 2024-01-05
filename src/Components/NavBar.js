@@ -8,6 +8,7 @@ import {
   FaUsers,
   FaImages,
   FaInstagram,
+  FaBook,
 } from "react-icons/fa";
 import { SiGotomeeting } from "react-icons/si";
 import SvgImage from "../Assets/Rectangle 2.png";
@@ -76,6 +77,12 @@ const CustomNavbar = ({
       text:"Instagram Posts",
       href:"/instaposts",
       icon:<FaInstagram size={32} color="#015DB9" />,
+      onClick: closeMenu,
+    },
+    {
+      text:"Reports",
+      href:"/reports",
+      icon:<FaBook size={32} color="#015DB9" />,
       onClick: closeMenu,
     }
   ];

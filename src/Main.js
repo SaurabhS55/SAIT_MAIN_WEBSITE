@@ -32,8 +32,9 @@ const Main = () => {
       <Home ref={homeRef} />
       <Aboutus ref={aboutUsRef} />
       <Event ref={eventRef} />
-      <TeacherMentor ref={mentorRef} />
       <Gallery ref={galleryRef}/>
+      
+      <TeacherMentor ref={mentorRef} />
       <ContactForm />
       <Footer
         scrollToHome={() => scrollToRef(homeRef)}

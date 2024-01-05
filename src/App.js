@@ -7,6 +7,7 @@ import Main from "./Main";
 import ClubServices from "./Components/ClubServices";
 import InstaPosts from "./Components/InstaPosts";
 import OurTeam from "./Components/OurTeam";
+import Reports from "./Components/Reports";
 const App = () => {
 
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/EventDetails/:id" element={<EventDetails />} />
           <Route path="/instaposts" element={<InstaPosts />} />
           <Route path="/ourteam" element={<OurTeam />} />
+          <Route path="/reports" element={<Reports/>}/>
         </Routes>
     </div>
   );

@@ -1,5 +1,25 @@
 const data = [
   {
+    Name: "Pratham Yadav",
+    Board: "Mentor",
+    Position: "Mentor",
+    Photo:
+      "https://res.cloudinary.com/dptdrzycj/image/upload/v1704214739/Pratham_Yadav_R_23-24_-_Pratham_Yadav_nqb8zk.jpg",
+    LinkedInProfile: "https://www.linkedin.com/in/pratham007yadav/",
+    GitHubProfile: "https://github.com/raptor-2001",
+    InstagramProfile: "https://www.facebook.com/pratham.yadao",
+  },
+  {
+    Name: "Sarthak Deshmukh",
+    Board: "Mentor",
+    Position: "Mentor",
+    Photo:
+      "https://res.cloudinary.com/dptdrzycj/image/upload/v1704214916/sd_-_Sarthak_Deshmukh_z3jmdj.jpg",
+    LinkedInProfile: "https://www.linkedin.com/in/sarthak-deshmukh-a3a956213/",
+    GitHubProfile: "https://github.com/SarthakD15",
+    InstagramProfile: "https://www.instagram.com/sarthakd1512/",
+  },
+  {
     Name: "Mandar kamble",
     Board: "Mentor",
     Position: "Mentor",
@@ -73,16 +93,6 @@ const data = [
       "https://instagram.com/swapnil_kulkarni_2001?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
   },
   {
-    Name: "Pratham Yadav",
-    Board: "Mentor",
-    Position: "Mentor",
-    Photo:
-      "https://res.cloudinary.com/dptdrzycj/image/upload/v1704214739/Pratham_Yadav_R_23-24_-_Pratham_Yadav_nqb8zk.jpg",
-    LinkedInProfile: "https://www.linkedin.com/in/pratham007yadav/",
-    GitHubProfile: "https://github.com/raptor-2001",
-    InstagramProfile: "https://www.facebook.com/pratham.yadao",
-  },
-  {
     Name: "Mohit Khairnar",
     Board: "Mentor",
     Position: "Club Service Director",
@@ -102,16 +112,6 @@ const data = [
       "https://www.linkedin.com/me?trk=p_mwlite_feed_updates-secondary_nav",
     GitHubProfile: "https://github.com/Sahil-2003",
     InstagramProfile: "https://www.instagram.com/ankur.singh.18_05/",
-  },
-  {
-    Name: "Sarthak Deshmukh",
-    Board: "Mentor",
-    Position: "Mentor",
-    Photo:
-      "https://res.cloudinary.com/dptdrzycj/image/upload/v1704214916/sd_-_Sarthak_Deshmukh_z3jmdj.jpg",
-    LinkedInProfile: "https://www.linkedin.com/in/sarthak-deshmukh-a3a956213/",
-    GitHubProfile: "https://github.com/SarthakD15",
-    InstagramProfile: "https://www.instagram.com/sarthakd1512/",
   },
   {
     Name: "Ayush Wadalkar",

@@ -12,7 +12,7 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-function Footer({ scrollToHome, scrollToAboutUs, scrollToGallery, sc }) {
+function Footer({ scrollToHome, scrollToAboutUs, scrollToGallery }) {
   const youtubeUrl = "https://youtube.com/@wcesait5335?si=W6Sdl-AtjrLN0ge8";
   const linkedinUrl =
     "https://www.linkedin.com/in/wcesait?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app";
@@ -90,7 +90,7 @@ function Footer({ scrollToHome, scrollToAboutUs, scrollToGallery, sc }) {
               </a>
             </li>
             <li>
-              <a className="p-1 flex space-x-2 items-center" href="#Events" o>
+              <a className="p-1 flex space-x-2 items-center" href="#Events" >
                 <FaCalendarAlt></FaCalendarAlt>
                 <span>Events</span>
               </a>

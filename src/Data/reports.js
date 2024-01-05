@@ -29,3 +29,4 @@ const data = [
         title:"Annual Report 2018-19"
     }
 ]
+export default data;
