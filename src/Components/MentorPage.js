@@ -10,7 +10,7 @@ const MentorPage = forwardRef((props, ref) => {
         Mentors
       </div>
 
-      <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-16">
         {mentors &&
           mentors.map((mentor) => {
             return <Board mentor={mentor} key={mentor.Name} />;
