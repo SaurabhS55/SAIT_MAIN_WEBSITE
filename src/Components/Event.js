@@ -1,19 +1,14 @@
-
 import "../Style/Event.css";
-import React,{forwardRef} from "react";
+import React, { forwardRef } from "react";
 import { Link } from "react-router-dom";
 import events from "../Data/EventData";
 
-
-const Event = forwardRef((props, ref) =>  {
-
+const Event = forwardRef((props, ref) => {
   return (
     <div ref={ref} className="p-4 event_section">
-     <div className="text-[50px] font-bold text-center gradient-text event_section_heading mt-5">
-  Events
-</div>
-
-     
+      <div className="text-[50px] font-bold text-center gradient-text event_section_heading mt-5">
+        Events
+      </div>
 
       <div className="flex flex-wrap  justify-center mt-2 event_section_events">
         {events.map((event, i) => {

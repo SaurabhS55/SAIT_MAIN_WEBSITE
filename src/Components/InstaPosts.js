@@ -6,7 +6,7 @@ const InstaPosts = ({ref}) => {
   return (
     <div ref={ref} >
       <div className="">
-        <div className="text-[50px] font-bold text-center gradient-text mt-3">
+        <div className="text-[40px] font-bold text-center text-blue-600 mt-3">
           Instagram Posts
         </div>
         <div  className="flex flex-wrap justify-center items-center gap-[30px] mt-2">
@@ -14,7 +14,7 @@ const InstaPosts = ({ref}) => {
           return (
             <div
               key={i}
-              className="max-w-[360px] p-3 mt-4 bg-gradient-to-b from-0E2032 to-ADEFD1 items-center rounded-[10px] poster bg-[#0e2032e5]"
+              className="w-[310px] max-w-[360px] p-3 mt-4 bg-gradient-to-b from-0E2032 to-ADEFD1 items-center rounded-[10px] poster bg-[#0e2032e5]"
             >
               <div className="mt-2">
                 <img

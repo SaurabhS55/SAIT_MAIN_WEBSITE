@@ -13,7 +13,7 @@ const ClubServices = forwardRef((props, ref) => {
 
   return (
     <div ref={ref} className="event_section">
-      <div className="text-[50px] font-bold text-center gradient-text event_section_heading mt-3">
+      <div className="text-[50px] font-bold text-center text-blue-600 mt-3">
         Club Services
       </div>
 

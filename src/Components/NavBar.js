@@ -6,19 +6,18 @@ import {
   FaInfoCircle,
   FaCalendarAlt,
   FaUsers,
-  FaUserTie,
   FaImages,
+  FaInstagram,
 } from "react-icons/fa";
 import { SiGotomeeting } from "react-icons/si";
 import SvgImage from "../Assets/Rectangle 2.png";
+import { Link } from "react-router-dom";
 
 const CustomNavbar = ({
   scrollToHome,
   scrollToAboutUs,
   scrollToGallery,
   scrollToEvent,
-  scrollToMentor,
-  scrollToOurTeam,
 }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [hoveredLink, setHoveredLink] = useState(null);
@@ -56,16 +55,10 @@ const CustomNavbar = ({
       onClick: scrollToEvent,
     },
     {
-      text: "MENTORS",
-      href:"#mentors",
-      icon: <FaUsers size={32} color="#015DB9" />,
-      onClick: scrollToMentor,
-    },
-    {
       text: "OUR TEAM",
-      href:"#ourteam",
-      icon: <FaUserTie size={32} color="#015DB9" />,
-      onClick: scrollToOurTeam,
+      href:"/ourteam",
+      icon: <FaUsers size={32} color="#015DB9" />,
+      onClick:closeMenu,
     },
     {
       text:"CLUB SERVICES",
@@ -79,12 +72,18 @@ const CustomNavbar = ({
       icon: <FaImages size={32} color="#015DB9" />,
       onClick: scrollToGallery,
     },
+    {
+      text:"Instagram Posts",
+      href:"/instaposts",
+      icon:<FaInstagram size={32} color="#015DB9" />,
+      onClick: closeMenu,
+    }
   ];
 
   return (
     <nav className="p-4 lg:px-8 mb-4">
       <div className="lg:px-14 mx-auto flex items-center justify-between">
-        <a href="/" className="flex items-center text-white">
+        <Link href="/" className="flex items-center text-white">
           <img
             src={SvgImage}
             alt="Logo"
@@ -93,7 +92,7 @@ const CustomNavbar = ({
             className="mr-2"
           />
           <span className="text-xl font-semibold">SAIT</span>
-        </a>
+        </Link>
 
         <div className="md:hidden">
             {isMenuOpen ? (
@@ -108,8 +107,8 @@ const CustomNavbar = ({
         >
           {navLinks.map(({ text, icon, onClick,href}, index) => (
             <div key={index} className="relative">
-              <a
-                href={href}
+              <Link
+                to={href}
                 className="flex shadow-lg items-center text-white hover:text-gray-300 md:mt-0 transition duration-300 transform hover:scale-110 bg-slate-200 bg-opacity-90 md:bg-opacity-10 p-3 rounded-full"
                 onClick={() => {
                   onClick();
@@ -120,7 +119,7 @@ const CustomNavbar = ({
                 key={index}
               >
                 {icon}
-              </a>
+              </Link>
               {hoveredLink === index && (
                 <div className="absolute w-auto bg-white text-black font-bold p-2 rounded-md text-xs opacity-50 text-center scale-75">
                   {text}

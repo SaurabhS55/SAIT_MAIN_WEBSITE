@@ -40,7 +40,6 @@ const ResponsiveGallery = forwardRef((props, ref) => {
             <img
               src={selectedImage.imageLink || images[7].imageLink}
               alt={images[6].title}
-              onClick={() => handleImageSelect(null)}
             />
           </div>
           <div className="right-gallery">

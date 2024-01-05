@@ -66,3 +66,12 @@
     }
 }
 
+
+.gradient-text {
+    background-image: linear-gradient(to left,#7CBCFC,#3096FB,#0281ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-align: center;
+  }
+  

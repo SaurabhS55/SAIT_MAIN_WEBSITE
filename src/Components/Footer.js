@@ -8,17 +8,11 @@ import {
   FaUsers,
   FaCalendarAlt,
   FaImages,
-  FaInfoCircle,
-  FaInstagram,
+  FaInfoCircle
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-function Footer({
-  scrollToHome,
-  scrollToAboutUs,
-  scrollToGallery,
-  scrollToMentors,
-  scrollToTeam,
-}) {
+function Footer({ scrollToHome, scrollToAboutUs, scrollToGallery, sc }) {
   const youtubeUrl = "https://youtube.com/@wcesait5335?si=W6Sdl-AtjrLN0ge8";
   const linkedinUrl =
     "https://www.linkedin.com/in/wcesait?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app";
@@ -76,37 +70,45 @@ function Footer({
           <h3>Some Links</h3>
           <ul>
             <li>
-              <a className="p-1 flex space-x-2 items-center" href="#Home" onClick={scrollToHome}>
+              <a
+                className="p-1 flex space-x-2 items-center"
+                href="#Home"
+                onClick={scrollToHome}
+              >
                 <FaHome></FaHome>
                 <span>Home</span>
               </a>
             </li>
             <li>
-              <a className="p-1 flex space-x-2 items-center" href="#About" onClick={scrollToAboutUs}>
+              <a
+                className="p-1 flex space-x-2 items-center"
+                href="#About"
+                onClick={scrollToAboutUs}
+              >
                 <FaInfoCircle></FaInfoCircle>
                 <span>About us</span>
               </a>
             </li>
             <li>
-              <a className="p-1 flex space-x-2 items-center" href="#Events">
-                <FaCalendarAlt></FaCalendarAlt><span>Events</span>
+              <a className="p-1 flex space-x-2 items-center" href="#Events" o>
+                <FaCalendarAlt></FaCalendarAlt>
+                <span>Events</span>
               </a>
             </li>
             <li>
-              <a className="p-1 flex space-x-2 items-center" href="#Mentors">
-                <FaUsers></FaUsers><span>Mentors and Team</span>
-              </a>
+              <Link className="p-1 flex space-x-2 items-center" to={"/ourteam"}>
+                <FaUsers></FaUsers>
+                <span>Mentors and Team</span>
+              </Link>
             </li>
             <li>
-              <a className="p-1 flex space-x-2 items-center" href="#Gallery" onClick={scrollToGallery}>
+              <a
+                className="p-1 flex space-x-2 items-center"
+                href="#Gallery"
+                onClick={scrollToGallery}
+              >
                 <FaImages></FaImages>
                 <span>Gallery</span>
-              </a>
-            </li>
-            <li>
-              <a className="p-1 flex space-x-2 items-center" href="/instaposts" onClick={scrollToGallery}>
-                <FaInstagram></FaInstagram>
-                <span>Instagram Posts</span>
               </a>
             </li>
           </ul>
@@ -116,19 +118,22 @@ function Footer({
           <h3>Official Emails</h3>
           <ul>
             <li>
-              <a href="mailto:sait@walchandsangli.ac.in">
-                sait@walchandsangli.ac.in
+              <a href="mailto:wce.sait@walchandsangli.ac.in">
+                wce.sait@walchandsangli.ac.in
               </a>
             </li>
             <li>
-              <a href="mailto:designteam@gmail.com">designteam@gmail.com</a>
-            </li>
-            <li>
-              <a href="mailto:saittechnicalteam@gmail.com">
-                saittechnicalteam@gmail.com
-              </a>
+              <a href="mailto:sait2001@gmail.com">sait2001@gmail.com</a>
             </li>
           </ul>
+
+          <h3 className="mt-4">Location</h3>
+          <div className="flex">
+            <span>
+              Walchand College Of Engineering, Vishrambag, Sangli, Maharashtra -
+              416 415
+            </span>
+          </div>
         </div>
       </div>
     </footer>
