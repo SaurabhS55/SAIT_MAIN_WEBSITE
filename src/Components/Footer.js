@@ -3,6 +3,13 @@ import "../Style/Footer.css";
 import SvgImage0 from "../Assets/YouTube.png";
 import SvgImage1 from "../Assets/LinkedIn.png";
 import SvgImage2 from "../Assets/Instagram.png";
+import {
+  FaHome,
+  FaUsers,
+  FaCalendarAlt,
+  FaImages,
+  FaInfoCircle,
+} from "react-icons/fa";
 
 function Footer({
   scrollToHome,
@@ -68,24 +75,31 @@ function Footer({
           <h3>Some Links</h3>
           <ul>
             <li>
-              <a href="#Home" onClick={scrollToHome}>
-                Home
+              <a className="p-1 flex space-x-2 items-center" href="#Home" onClick={scrollToHome}>
+                <FaHome></FaHome>
+                <span>Home</span>
               </a>
             </li>
             <li>
-              <a href="#About" onClick={scrollToAboutUs}>
-                About us
+              <a className="p-1 flex space-x-2 items-center" href="#About" onClick={scrollToAboutUs}>
+                <FaInfoCircle></FaInfoCircle>
+                <span>About us</span>
               </a>
             </li>
             <li>
-              <a href="#Events">Events</a>
+              <a className="p-1 flex space-x-2 items-center" href="#Events">
+                <FaCalendarAlt></FaCalendarAlt><span>Events</span>
+              </a>
             </li>
             <li>
-              <a href="#Mentors">Mentors and Team</a>
+              <a className="p-1 flex space-x-2 items-center" href="#Mentors">
+                <FaUsers></FaUsers><span>Mentors and Team</span>
+              </a>
             </li>
             <li>
-              <a href="#Gallery" onClick={scrollToGallery}>
-                Gallery
+              <a className="p-1 flex space-x-2 items-center" href="#Gallery" onClick={scrollToGallery}>
+                <FaImages></FaImages>
+                <span>Gallery</span>
               </a>
             </li>
           </ul>
