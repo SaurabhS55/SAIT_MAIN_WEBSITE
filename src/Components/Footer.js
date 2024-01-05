@@ -9,6 +9,7 @@ import {
   FaCalendarAlt,
   FaImages,
   FaInfoCircle,
+  FaInstagram,
 } from "react-icons/fa";
 
 function Footer({
@@ -100,6 +101,12 @@ function Footer({
               <a className="p-1 flex space-x-2 items-center" href="#Gallery" onClick={scrollToGallery}>
                 <FaImages></FaImages>
                 <span>Gallery</span>
+              </a>
+            </li>
+            <li>
+              <a className="p-1 flex space-x-2 items-center" href="#Gallery" onClick={scrollToGallery}>
+                <FaInstagram></FaInstagram>
+                <span>Instagram Posts</span>
               </a>
             </li>
           </ul>
