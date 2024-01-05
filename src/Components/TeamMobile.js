@@ -79,7 +79,7 @@ const TeamMobile = forwardRef((props, ref) => {
       <div className="w-full px-6 py-2 flex relative items-center gap-2">
         <FcPrevious
           size={28}
-          className="absolute left-8 cursor-pointer"
+          className="absolute left-4 cursor-pointer"
           onClick={handlePrev}
         />
 
@@ -92,7 +92,7 @@ const TeamMobile = forwardRef((props, ref) => {
             <div></div>
           )}
         </div>
-        <FcNext size={28} className="absolute right-8 cursor-pointer" onClick={handleNext} />
+        <FcNext size={28} className="absolute right-4 cursor-pointer" onClick={handleNext} />
       </div>
     </div>
   );

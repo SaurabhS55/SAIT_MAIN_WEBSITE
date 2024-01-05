@@ -97,7 +97,7 @@ const data = [
     InstagramProfile: "kaustubh_5500",
   },
   {
-    Name: "Prerna Rameshwar Pawar ",
+    Name: "Prerna  Pawar ",
     Board: "Main",
     Position: "Art designer and Editor ",
     Photo:
