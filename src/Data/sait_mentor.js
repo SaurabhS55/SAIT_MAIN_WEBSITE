@@ -10,7 +10,7 @@ const data = [
     InstagramProfile: "https://www.instagram.com/mandyytory/",
   },
   {
-    Name: "Om Vivek Gharge ",
+    Name: "Om Gharge ",
     Board: "Mentor",
     Position: "Mentor",
     Photo:
@@ -20,7 +20,7 @@ const data = [
     InstagramProfile: "https://www.instagram.com/_om_gharge_/",
   },
   {
-    Name: "Sonali Dattatray Kaingade",
+    Name: "Sonali  Kaingade",
     Board: "Mentor",
     Position: "Mentor",
     Photo:
@@ -51,7 +51,7 @@ const data = [
     InstagramProfile: "https://www.instagram.com/abhishekdeokar782/",
   },
   {
-    Name: "Harshal Rajendra Gawande",
+    Name: "Harshal Gawande",
     Board: "Mentor",
     Position: "Mentor",
     Photo:
@@ -83,7 +83,7 @@ const data = [
     InstagramProfile: "https://www.facebook.com/pratham.yadao",
   },
   {
-    Name: "Mohit Prakash Khairnar",
+    Name: "Mohit Khairnar",
     Board: "Mentor",
     Position: "Club Service Director",
     Photo:
@@ -146,7 +146,7 @@ const data = [
     InstagramProfile: "https://www.instagram.com/dipankar__dubey/",
   },
   {
-    Name: "Shraddha Tanaji Kore",
+    Name: "Shraddha Kore",
     Board: "Mentor",
     Position: "Mentor",
     Photo:
@@ -156,7 +156,7 @@ const data = [
     InstagramProfile: "https://www.instagram.com/shradha_kore/",
   },
   {
-    Name: "Shikha Sanjay Choudhari",
+    Name: "Shikha Choudhari",
     Board: "Mentor",
     Position: "Mentor",
     Photo:

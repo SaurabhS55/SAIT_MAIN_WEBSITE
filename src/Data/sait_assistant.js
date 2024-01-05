@@ -1,6 +1,6 @@
 const data = [
   {
-    Name: "Prapti Naresh Gawande",
+    Name: "Prapti Gawande",
     Board: "Assistant",
     Position: "Assistant Club Service Director",
     Photo:
@@ -21,7 +21,7 @@ const data = [
     InstagramProfile: "https://www.instagram.com/_para.g403",
   },
   {
-    Name: "Kranti Ananda Varekar",
+    Name: "Kranti  Varekar",
     Board: "Assistant",
     Position: "Assistant Public Relation Officer",
     Photo:
@@ -31,7 +31,7 @@ const data = [
     InstagramProfile: "",
   },
   {
-    Name: "Vedant Amit Panari",
+    Name: "Vedant Panari",
     Board: "Assistant",
     Position: "Assistant Aptitude Developer",
     Photo:
@@ -53,7 +53,7 @@ const data = [
       "https://instagram.com/soumitra__9458?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
   },
   {
-    Name: "Srushti Pravin Karadi",
+    Name: "Srushti Karadi",
     Board: "Assistant",
     Position: "Program Director",
     Photo:
@@ -105,7 +105,7 @@ const data = [
     InstagramProfile: "https://www.instagram.com/_anuja_suntnur",
   },
   {
-    Name: "Omkar Dipakkumar Patange",
+    Name: "Omkar Patange",
     Board: "Assistant",
     Position: "Assistant Web Developer",
     Photo:
@@ -125,7 +125,7 @@ const data = [
     InstagramProfile: "https://www.instagram.com/theadarshsahu/",
   },
   {
-    Name: "Manmath Devidas Mungde",
+    Name: "Manmath  Mungde",
     Board: "Assistant",
     Position: "Assistant Program Director",
     Photo:
@@ -135,7 +135,7 @@ const data = [
     InstagramProfile: "https://www.instagram.com/manmath_mungde",
   },
   {
-    Name: "Purva Sunil Patil",
+    Name: "Purva Patil",
     Board: "Assistant",
     Position: "Assistant Public Relation Officer",
     Photo:
@@ -146,7 +146,7 @@ const data = [
       "https://instagram.com/purva_patil_2108?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
   },
   {
-    Name: "Ishwari Narayan Gharge",
+    Name: "Ishwari Gharge",
     Board: "Assistant",
     Position: "Assistant Art Director",
     Photo:
@@ -157,7 +157,7 @@ const data = [
       "https://instagram.com/ish_wari__26?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
   },
   {
-    Name: "Divya Amrutrao Tarkase",
+    Name: "Divya Tarkase",
     Board: "Assistant",
     Position: "Assistant Public Relation Officer",
     Photo:
@@ -168,7 +168,7 @@ const data = [
       "https://instagram.com/dearly_div?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D",
   },
   {
-    Name: "Aryan Atul Babar",
+    Name: "Aryan Babar",
     Board: "Assistant",
     Position: "Assistant Art Director",
     Photo:
@@ -219,7 +219,7 @@ const data = [
       "https://instagram.com/_atharva017?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
   },
   {
-    Name: "Aaryash Dipak Devane",
+    Name: "Aaryash Devane",
     Board: "Assistant",
     Position: "Assistant Program Director",
     Photo:
@@ -249,7 +249,7 @@ const data = [
     InstagramProfile: "",
   },
   {
-    Name: "Vaibhav Dattatray Kondekar",
+    Name: "Vaibhav Kondekar",
     Board: "Assistant",
     Position: "Asistant Editor",
     Photo:
@@ -281,7 +281,7 @@ const data = [
     InstagramProfile: "https://www.instagram.com/_vidyadhar_d/",
   },
   {
-    Name: "Satej Sandeep Sawant",
+    Name: "Satej Sawant",
     Board: "Assistant",
     Position: "Assistant Programming Expert",
     Photo:
@@ -301,7 +301,7 @@ const data = [
     InstagramProfile: "https://www.instagram.com/07_pratham_patil",
   },
   {
-    Name: "Sandesh Shivaji Shinde",
+    Name: "Sandesh Shinde",
     Board: "Assistant",
     Position: "Assistant Club Service Director",
     Photo: "https://res.cloudinary.com/dptdrzycj/image/upload/v1704356554/20231231_175933_-_Sandesh_Shinde_bhcg8x.jpg",

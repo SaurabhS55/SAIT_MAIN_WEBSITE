@@ -44,7 +44,7 @@ const data = [
       "https://instagram.com/himanshu_mude?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
   },
   {
-    Name: "Vedant Vijay Vedpathak",
+    Name: "Vedant Vedpathak",
     Board: "Main",
     Position: "Vice President",
     Photo:
@@ -65,7 +65,7 @@ const data = [
     InstagramProfile: "-",
   },
   {
-    Name: "Shriya Nandkumar Patil ",
+    Name: "Shriya Patil ",
     Board: "Main",
     Position: "Program Director ",
     Photo:
@@ -76,7 +76,7 @@ const data = [
       "https://instagram.com/shriyapatil_?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D",
   },
   {
-    Name: "Sana Husen Mulani",
+    Name: "Sana Mulani",
     Board: "Main",
     Position: "Art Designer & Editor ",
     Photo:
@@ -129,7 +129,7 @@ const data = [
       "https://instagram.com/mitaliiiiipatil?igshid=MzRlODBiNWFlZA==",
   },
   {
-    Name: "Shravani Ashok Umare",
+    Name: "Shravani Umare",
     Board: "Main",
     Position: "Art designer and Editor",
     Photo:
@@ -139,7 +139,7 @@ const data = [
     InstagramProfile: "shravni.umare3",
   },
   {
-    Name: "Aaditya Rajendra Patil ",
+    Name: "Aaditya Patil ",
     Board: "Main",
     Position: "Program Director ",
     Photo:
@@ -150,7 +150,7 @@ const data = [
       "https://instagram.com/aadityapatil345?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D",
   },
   {
-    Name: "Siddhi Vikas Phatak",
+    Name: "Siddhi Phatak",
     Board: "Main",
     Position: "Public Relations Officer",
     Photo:
