@@ -123,7 +123,7 @@ function Footer({ scrollToHome, scrollToAboutUs, scrollToGallery }) {
               </a>
             </li>
             <li>
-              <a href="mailto:sait2001@gmail.com">sait2001@gmail.com</a>
+              <a href="mailto:wce.sait2001@gmail.com">wce.sait2001@gmail.com</a>
             </li>
           </ul>
 

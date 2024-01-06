@@ -13,12 +13,12 @@ const ClubServices = forwardRef((props, ref) => {
 
   return (
     <div ref={ref} className="event_section">
-      <FiArrowLeft color="white" onClick={()=>{navigate("/")}} size={35} style={{position:"absolute",cursor:"pointer",left:"30px",top:"30px"}}/>
+      <FiArrowLeft color="white" onClick={()=>{navigate("/")}} size={35} style={{position:"absolute",cursor:"pointer",left:"30px",top:"6rem"}}/>
       <div className="text-[50px] font-bold text-center text-blue-600 mt-3">
         Club Services
       </div>
 
-      <div className="flex flex-wrap justify-center items-center event_section_events gap-[30px] mt-2">
+      <div className="flex flex-wrap justify-center items-center event_section_events gap-[30px] mt-12">
         {clubServices.map((event, i) => {
           return (
             <div

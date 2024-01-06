@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { useSpring, animated } from "react-spring";
-import { useParams } from "react-router-dom";
+import { useParams,useNavigate } from "react-router-dom";
+import { FiArrowLeft } from "react-icons/fi";
 import "../Style/details.css";
 import clubServices from "../Data/clubServices";
 
 const EventDetails = () => {
   const { id } = useParams();
-
+  const navigate=useNavigate();
   const [event, setEvent] = useState(null);
 
   const backgroundAnimation = useSpring({
@@ -24,6 +25,7 @@ const EventDetails = () => {
 
   return (
     <div className="bg-black min-h-screen">
+      <FiArrowLeft color="white" onClick={()=>{navigate("/clubservice")}} size={35} style={{position:"absolute",cursor:"pointer",left:"30px",top:"6rem"}}/>
       <div className="parallax-bg">
         <animated.div
           className="text-[40px] font-bold text-center py-5 gtext"
