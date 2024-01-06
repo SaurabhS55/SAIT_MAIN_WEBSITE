@@ -116,7 +116,7 @@ const data = [
     Board: "Main",
     Position: "Web Developer",
     Photo:
-      "https://res.cloudinary.com/du3cgjere/image/upload/v1693624860/sait%20images/Saurabh_Salunke_quqidb.jpg",
+      "https://res.cloudinary.com/du3cgjere/image/upload/v1704534653/sait%20images/cglrkt5rrlzsmvqvr8fu.jpg",
     LinkedInProfile: "https://www.linkedin.com/in/saurabh-salunke-560448245/",
     GitHubProfile: "https://github.com/SaurabhS55",
     InstagramProfile: "https://www.instagram.com/saurabhsalunke555/",

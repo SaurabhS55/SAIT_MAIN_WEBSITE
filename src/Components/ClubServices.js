@@ -1,11 +1,11 @@
 import React, { forwardRef } from "react";
 import { useNavigate } from "react-router-dom";
 import clubServices from "../Data/clubServices";
+import { FiArrowLeft } from "react-icons/fi";
 import "../Style/ClubService.css";
 
 const ClubServices = forwardRef((props, ref) => {
   const navigate = useNavigate();
-
   const handleCardClick = (event) => {
     // Navigate to the EventDetails component with the specific event ID
     navigate(`/EventDetails/${event.id}`);
@@ -13,6 +13,7 @@ const ClubServices = forwardRef((props, ref) => {
 
   return (
     <div ref={ref} className="event_section">
+      <FiArrowLeft color="white" onClick={()=>{navigate("/")}} size={35} style={{position:"absolute",cursor:"pointer",left:"30px",top:"30px"}}/>
       <div className="text-[50px] font-bold text-center text-blue-600 mt-3">
         Club Services
       </div>

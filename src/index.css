@@ -66,7 +66,17 @@
     }
 }
 
-
+body{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 0.5rem;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background: #3096FB;
+    border-radius: 0.5rem;
+}
 .gradient-text {
     background-image: linear-gradient(to left,#7CBCFC,#3096FB,#0281ff);
       -webkit-background-clip: text;

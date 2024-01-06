@@ -13,7 +13,9 @@ const ResponsiveGallery = forwardRef((props, ref) => {
 
   return (
     <div className="try px-8 py-4 mt-12" ref={ref}>
-      <h2 className="colorfont text-lg">GALLERY</h2>
+      <h1 className="text-[50px] font-bold text-center gradient-text event_section_heading mt-5 mb-4">
+        GALLERY
+      </h1>
       {images.length !== 0 ? (
         <div className="responsive-gallery">
           <div className="left-gallery">

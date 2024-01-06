@@ -10,7 +10,9 @@ function ContactForm() {
   return (
     <section className="py-3 py-md-5 py-xl-8 mt-12 w-10/12 mx-auto">
       <div className="container">
-        <h2 className="">CONTACT US</h2>
+      <h1 className="text-[50px] font-bold text-center gradient-text event_section_heading mt-5 mb-4">
+        CONTACT US
+      </h1>
         <div className="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
           <div className="col-12 col-lg-6 col-xl-5">
             <img

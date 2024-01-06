@@ -5,16 +5,17 @@ import team from "../Data/sait_main";
 import assistant from "../Data/sait_assistant";
 import mentor from "../Data/sait_mentor";
 import TeamMobile from "./TeamMobile";
-
+import { useNavigate } from "react-router-dom";
+import { FiArrowLeft } from "react-icons/fi";
 const OurTeam = forwardRef((props, ref) => {
   const [ourTeam, setourTeam] = useState(1);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
+  const navigate = useNavigate();
   useEffect(() => {
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
     };
-
     window.addEventListener("resize", handleResize);
 
     return () => {
@@ -24,7 +25,9 @@ const OurTeam = forwardRef((props, ref) => {
     // eslint-disable-next-line
   }, []);
   return (
-    <>{
+    <div>
+      <FiArrowLeft color="white" onClick={()=>{navigate("/")}} size={35} style={{position:"absolute",cursor:"pointer",left:"30px",top:"30px"}}/>
+      {
       (screenWidth > 768) ?  <div
       ref={ref}
       className="flex flex-col justify-between items-center pt-6 pb-12"
@@ -99,7 +102,7 @@ const OurTeam = forwardRef((props, ref) => {
     <TeamMobile/>
     </>
     }
-    </>
+    </div>
    
   );
 });

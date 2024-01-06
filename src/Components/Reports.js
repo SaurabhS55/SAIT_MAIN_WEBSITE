@@ -1,8 +1,12 @@
 import React from "react";
 import Data from "../Data/reports";
+import { useNavigate } from "react-router-dom";
+import { FiArrowLeft } from "react-icons/fi";
 const Reports = () => {
+  const navigate = useNavigate();
   return (
     <div className="p-4">
+      <FiArrowLeft color="white" onClick={()=>{navigate("/")}} size={35} style={{position:"absolute",cursor:"pointer",left:"30px",top:"30px"}}/>
       <h2 className="text-[50px]  font-bold  text-center  text-blue-600 mb-6">
         Annual Reports
       </h2>

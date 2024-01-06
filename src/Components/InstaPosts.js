@@ -1,11 +1,13 @@
 import React from "react";
 import posts from "../Data/instaPosts"
-
+import { useNavigate } from "react-router-dom";
+import { FiArrowLeft } from "react-icons/fi";
 const InstaPosts = ({ref}) => {
-
+const navigate = useNavigate();
   return (
     <div ref={ref} >
       <div className="">
+      <FiArrowLeft color="white" onClick={()=>{navigate("/")}} size={35} style={{position:"absolute",cursor:"pointer",left:"30px",top:"30px"}}/>
         <div className="text-[40px] font-bold text-center text-blue-600 mt-3">
           Instagram Posts
         </div>
