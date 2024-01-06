@@ -8,7 +8,7 @@ const Board = ({ mentor }) => {
         <span className="absolute top-20 left-24 z-0 h-20 w-20 rounded-full bg-[#183b5ce5] transition-all duration-700 group-hover:scale-[10]"></span>
         <div className="relative z-10 mx-auto max-w-md space-y-3 transition-all group-hover:shadow-lg">
           <img
-          loading="lazy"
+            loading="lazy"
             placeholder={mentor.Names}
             src={mentor.Photo}
             alt={mentor.Name}

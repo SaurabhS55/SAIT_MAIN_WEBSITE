@@ -6,7 +6,7 @@ const data = [
     },
     {
         year: "2022-23",
-        pdf :"https://res.cloudinary.com/dptdrzycj/image/upload/v1704454209/SAIT_Report_on_Major_Events_AY_2021-22_1_jk3ipm.pdf",
+        pdf :"https://res.cloudinary.com/dptdrzycj/image/upload/v1704454236/Annual_Report_2022-23_gmrgb3.pdf",
         title:"Annual Report 2022-23"
     },
     {

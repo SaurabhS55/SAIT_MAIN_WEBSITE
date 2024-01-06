@@ -15,11 +15,12 @@ const Reports = () => {
             >
               <h1 className="text-lg font-semibold ">{report.title}</h1>
               <div className="flex justify-end">
+               { ((report.pdf !== "") && (report.pdf !== undefined))? (
                 <a href={report.pdf} target="_blnak" rel="noreferrer">
                   <button className="w-fit px-4 py-2 bg-blue-400 shadow-md">
                     View
                   </button>
-                </a>
+                </a>) :<span className="text-blue-500">Will be uploaded soon</span>}
               </div>
             </div>
           );
